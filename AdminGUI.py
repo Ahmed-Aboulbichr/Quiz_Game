@@ -132,9 +132,11 @@ class AdminGUI(ttk.Window):
         # ck.set_appearance_mode("System") Dark Light
 
         self.mainloop()
+
     def retourner(self):
-        pass
-    
+        self.withdraw()
+        subprocess.call(["python", "gametest.py"])
+
     def ecrire(self):
         with open("percentage.txt", "w") as file:
             file.write(f"{self.easy_percent.get()}\n")
@@ -149,11 +151,12 @@ class AdminGUI(ttk.Window):
 
     def affiche(self, record):
         for index, d in enumerate(self.data):
+            print(d["niveau"])
             if d["question"] == record[0]:
                 self.id_question.set(d["ID"])
                 rep = d["answers"]
                 self.setContent(txt=record[0], rep1=rep[0], rep2=rep[1], rep3=rep[2], rep4=rep[3],
-                                checkbtn=d["correctIndex"])
+                                checkbtn=d["correctIndex"], nbr=d["niveau"])
 
     def add_question(self):
         self.data.append({
@@ -184,6 +187,7 @@ class AdminGUI(ttk.Window):
             for donnee in donnees:
                 a = donnee["niveau"]
                 niveau = "easy" if a==1 else ("med" if a==2 else "hard")
+                print(niveau)
                 file.write(f"'{donnee['question']}',{niveau}\n")
         with open("answer_choice.txt", "w") as file:
             for donnee in donnees:
@@ -217,6 +221,7 @@ class AdminGUI(ttk.Window):
                 self.data[index]["question"] = self.txtEntry.get()
                 self.data[index]["answers"] = [self.answer1.get(), self.answer2.get(), self.answer3.get(), self.answer4.get()]
                 self.data[index]["correctIndex"] = self.reponse.get()
+                self.data[index]["niveau"] = self.niveau.get()
         with open("quiz.json", 'w') as json_file:
             json.dump(self.data, json_file,
                       indent=4,
@@ -240,13 +245,14 @@ class AdminGUI(ttk.Window):
         self.niveau.set(-1)
 
 
-    def setContent(self, txt, rep1, rep2, rep3, rep4, checkbtn=-1):
+    def setContent(self, txt, rep1, rep2, rep3, rep4, checkbtn=-1, nbr=-1):
         self.txtEntry.insert(0, txt)
         self.answer1.insert(0, rep1)
         self.answer2.insert(0, rep2)
         self.answer3.insert(0, rep3)
         self.answer4.insert(0, rep4)
         self.reponse.set(checkbtn)
+        self.niveau.set(nbr)
 
 
 if __name__ == "__main__":

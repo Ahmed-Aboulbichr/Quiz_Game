@@ -1,5 +1,4 @@
-'What is the scientific name of a butterfly?',easy
-'How hot is the surface of the sun?',easy
+'How hot is the surface of the sun?',med
 'Who are the actors in The Internship?',easy
 'What is the capital of Spain?',easy
 'What are the school colors of the University of Texas at Austin?',easy
@@ -7,3 +6,4 @@
 'When was Mahatma Gandhi born?',easy
 'How far is the moon from Earth?',easy
 'How tall is Mount Everest?',easy
+'aaaaaaaaaa',hard

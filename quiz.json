@@ -1,17 +1,5 @@
 [
     {
-        "ID": 1,
-        "question": "What is the scientific name of a butterfly?",
-        "answers": [
-            "Apis",
-            "Coleoptera",
-            "Formicidae",
-            "Rhopalocera"
-        ],
-        "correctIndex": 3,
-        "niveau": 1
-    },
-    {
         "ID": 2,
         "question": "How hot is the surface of the sun?",
         "answers": [
@@ -21,7 +9,7 @@
             "101,300 K"
         ],
         "correctIndex": 1,
-        "niveau": 1
+        "niveau": 2
     },
     {
         "ID": 3,
@@ -106,5 +94,17 @@
         ],
         "correctIndex": 3,
         "niveau": 1
+    },
+    {
+        "ID": 9,
+        "question": "aaaaaaaaaa",
+        "answers": [
+            "affffff",
+            "rrrrrrrrrrr",
+            "ggggggggggg",
+            "ccccccccc"
+        ],
+        "correctIndex": 2,
+        "niveau": -1
     }
 ]

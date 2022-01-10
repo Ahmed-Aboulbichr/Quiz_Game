@@ -1,4 +1,3 @@
-Apis,Coleoptera,Formicidae,Rhopalocera
 1,233 K,5,778 K,12,130 K,101,300 K
 Ben Stiller, Jonah Hill,Courteney Cox, Matt LeBlanc,Kaley Cuoco, Jim Parsons,Vince Vaughn, Owen Wilson
 Berlin,Buenos Aires,Madrid,San Juan
@@ -7,3 +6,4 @@ Black, Red,Blue, Orange,White, Burnt Orange,White, Old gold, Gold
 October 2, 1869,December 15, 1872,July 18, 1918,January 15, 1929
 7,918 miles (12,742 km),86,881 miles (139,822 km),238,400 miles (384,400 km),35,980,000 miles (57,910,000 km)
 6,683 ft (2,037 m),7,918 ft (2,413 m),19,341 ft (5,895 m),29,029 ft (8,847 m)
+affffff,rrrrrrrrrrr,ggggggggggg,ccccccccc
