@@ -57,5 +57,5 @@ Questions.
 Stay Curious.
 
 This project was made by two Devs :
-- AHMED ABOULBIRCH.
+- AHMED ABOULBICHR.
 - ISMAIL JABRI (Darklight-ismail).
